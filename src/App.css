@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+header {
+    background: #323232;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+    display: flex;
+    width: 69%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav :hover {
+    color: lightgrey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav :focus {
+    color: lightgray;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.subnav p:hover {
+    color: lightgrey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+i {
+    color: white;
+}
+
+#apple {
+    font-size: 25px;
+}
+
+.subnav {
+    height: 120px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    justify-items: center;
+    animation-duration: 1s;
+}
+
+.mac {
+    background: rgba(245, 245, 247, 0.6);
+    /* background: #141414; */
+    color: #1d1d1f;
+}
+
+.ipad {
+    background: rgba(245, 245, 247, 0.6);
+    color: #1d1d1f;
+}
+.iphone {
+    background: rgba(29, 29, 31, 0.9);
+    color: #f5f5f7;
+}
+
+.watch {
+    background: rgba(245, 245, 247, 0.6);
+    color: #1d1d1f;
+}
+.tv {
+    background: rgba(29, 29, 31, 0.9);
+    color: #f5f5f7;
+}
+.music {
+    background: rgba(29, 29, 31, 0.9);
+    color: #f5f5f7;
+}
+
+.maccontainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 60%;
+    margin: 0 auto;
+    animation-duration: 0.3s;
+    animation-name: ani;
+}
+
+@keyframes ani {
+    from {
+        margin-left: 40%;
+    }
+    to {
+        margin-left: 20%;
+    }
+}
+
+.maccontainer div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ipadcontainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.iphonecontainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 50%;
+    margin: 0 auto;
 }
