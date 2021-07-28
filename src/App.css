@@ -1,0 +1,147 @@
+header {
+    background: #323232;
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: flex;
+    width: 69%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav :hover {
+    color: lightgrey;
+}
+
+nav :focus {
+    color: lightgray;
+}
+
+.subnav {
+    position: relative;
+    height: 120px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    animation-duration: 0.3s;
+    animation-name: ani;
+}
+
+@keyframes ani {
+    from {
+        margin-left: 40%;
+    }
+    to {
+        margin-left: 20%;
+    }
+}
+
+.subnav div {
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 0;
+    display: inline-block;
+    flex-flow: column nowrap;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-items: center;
+    width: 60%;
+    padding-top: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.subnav p:hover {
+    color: lightgrey;
+}
+
+/*
+i {
+    color: white;
+}
+
+#apple {
+    font-size: 25px;
+}
+
+.mac {
+    background: rgba(245, 245, 247, 0.6);
+    
+    color: #1d1d1f;
+}
+
+.ipad {
+    background: rgba(245, 245, 247, 0.6);
+    color: #1d1d1f;
+}
+.iphone {
+    background: rgba(29, 29, 31, 0.9);
+    color: #f5f5f7;
+}
+
+.watch {
+    background: rgba(245, 245, 247, 0.6);
+    color: #1d1d1f;
+}
+.tv {
+    background: rgba(29, 29, 31, 0.9);
+    color: #f5f5f7;
+}
+.music {
+    background: rgba(29, 29, 31, 0.9);
+    color: #f5f5f7;
+}
+
+.maccontainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 60%;
+    margin: 0 auto;
+    animation-duration: 0.3s;
+    animation-name: ani;
+}
+
+@keyframes ani {
+    from {
+        margin-left: 40%;
+    }
+    to {
+        margin-left: 20%;
+    }
+}
+
+.maccontainer div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ipadcontainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.iphonecontainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 50%;
+    margin: 0 auto;
+} */
