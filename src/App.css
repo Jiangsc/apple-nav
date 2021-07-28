@@ -30,17 +30,8 @@ nav :focus {
     justify-content: center;
     justify-items: center;
     width: 100%;
-    animation-duration: 0.3s;
-    animation-name: ani;
-}
-
-@keyframes ani {
-    from {
-        margin-left: 40%;
-    }
-    to {
-        margin-left: 20%;
-    }
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .subnav div {
